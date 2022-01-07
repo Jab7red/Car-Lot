@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const expressSession = require('express-session');
 const app = express();
 const indexController = require('./controllers/index');
+const userController = require('./controllers/users');
 require('dotenv').config();
 const SECRET = process.env.SECRET
 // =======================================
@@ -42,6 +43,7 @@ app.use(function(req, res, next) {
 //              CONTROLLERS
 // =======================================
 app.use('/', indexController);
+app.use('/', userController);
 // =======================================
 //                LISTENER
 // =======================================
