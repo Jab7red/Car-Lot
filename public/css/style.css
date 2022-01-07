@@ -1,8 +1,10 @@
 body {
     text-align: center;
+    background-color: gray;
 }
 
 img {
     height: 200px;
     width: 400px;
+    border: 2px solid black;
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>JB's Car Lot</title>
+</head>
+<body>
+    <h1><%= listing.year %> <%= listing.make %> - <%= listing.model %></h1>
+    <header>
+        <nav>
+            <a href="/home">Return</a>
+        </nav>
+    </header>
+    <img src="<%= listing.img %>" alt="vehicle">
+    <p>Description: <%= listing.description %></p>
+    <p>Mileage: <%= listing.mileage %></p>
+    <p>Price: $<%= listing.price %></p>
+</body>
+</html>

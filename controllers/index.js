@@ -45,7 +45,9 @@ indexRouter.get('/home', (req, res) => {
 // SHOW
 indexRouter.get('/home/:id', (req, res) => {
     Listing.findById(req.params.id, (err, foundListing) => {
-        res.send('Show coming soon')
+        res.render('show.ejs', {
+            listing: foundListing,
+        });
     });
 });
 module.exports = indexRouter;

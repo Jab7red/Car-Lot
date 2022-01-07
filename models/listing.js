@@ -8,7 +8,8 @@ const listingSchema = new Schema({
     year: {type: String},
     mileage: {type: Number},
     description: {type: String},
-    price: {type: Number}
+    price: {type: Number},
+    watching: {type: Number, default: 0},
 });
 
 const Listing = mongoose.model('Listing', listingSchema);
