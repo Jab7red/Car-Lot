@@ -10,7 +10,19 @@ const bcrypt = require('bcrypt');
 // =======================================
 // LOGIN
 userRouter.get('/login', (req, res) => {
-    res.render('login.ejs');
+    res.render('login.ejs', {error: ''});
+});
+
+userRouter.post('/login', (req, res) => {
+    User.findOne({email: req.body.email}, (err, user) => {
+        if(!user) return res.render('login.ejs', {error: 'Invalid Credentials'});
+
+        const isMatched = bcrypt.compareSync(req.body.password, user.password)
+        if(!isMatched) return res.render('login.ejs', {error: 'Invalid Credentials'});
+
+        req.session.user = user._id;
+        res.redirect('/home');
+    });
 });
 //SIGN UP
 userRouter.get('/signup', (req, res) => {
