@@ -37,7 +37,9 @@ userRouter.post('/signup', (req, res) => {
 });
 //LOGOUT
 userRouter.get('/logout', (req, res) => {
-    res.send('logout coming soon');
+    req.session.destroy(function() {
+        res.redirect('/');
+    });
 });
 // =======================================
 //             MODULE EXPORT
