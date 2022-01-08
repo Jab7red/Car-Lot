@@ -47,6 +47,10 @@ app.use(function(req, res, next) {
 app.use('/', indexController);
 app.use('/', userController);
 // =======================================
+//              CATCH ROUTE
+// =======================================
+app.get('/*', (req, res) => res.render('catch.ejs'));
+// =======================================
 //                LISTENER
 // =======================================
 const PORT = process.env.PORT

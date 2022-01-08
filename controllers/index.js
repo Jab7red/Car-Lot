@@ -44,7 +44,11 @@ indexRouter.get('/home/new', (req, res) => {
     res.render('new.ejs');
 });
 // DELETE
-
+indexRouter.delete('/home/:id', (req, res) => {
+    Listing.findByIdAndDelete(req.params.id, (err, deleteListing) => {
+        res.redirect('/home');
+    });
+});
 // UPDATE
 indexRouter.put('/home/:id', (req, res) => {
     Listing.findByIdAndUpdate(

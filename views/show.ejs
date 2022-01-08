@@ -23,5 +23,8 @@
     <form action="/home/<%= listing._id %>/watch?_method=PUT" method="POST">
         <input type="submit" value="WATCH">
     </form>
+    <form action="/home/<%= listing._id %>?_method=DELETE" method="POST">
+        <input type="submit" value="REMOVE">
+    </form>
 </body>
 </html>
