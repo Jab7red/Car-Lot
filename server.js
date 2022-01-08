@@ -5,6 +5,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const expressSession = require('express-session');
+const methodOverride = require('method-override');
 const app = express();
 const indexController = require('./controllers/index');
 const userController = require('./controllers/users');
@@ -29,6 +30,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // =======================================
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan('dev'));
+app.use(methodOverride('_method'));
 app.use(expressSession({
     secret: SECRET,
     resave: false,

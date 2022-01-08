@@ -9,14 +9,19 @@
 </head>
 <body>
     <h1><%= listing.year %> <%= listing.make %> - <%= listing.model %></h1>
+    <h3>People Watching: <%=listing.watching %></h3>
     <header>
         <nav>
             <a href="/home">Return</a>
+            <a href="/home/<%= listing.id %>/edit">Edit Posting</a>
         </nav>
     </header>
     <img src="<%= listing.img %>" alt="vehicle">
     <p>Description: <%= listing.description %></p>
     <p>Mileage: <%= listing.mileage %></p>
     <p>Price: $<%= listing.price %></p>
+    <form action="/home/<%= listing._id %>/watch?_method=PUT" method="POST">
+        <input type="submit" value="WATCH">
+    </form>
 </body>
 </html>

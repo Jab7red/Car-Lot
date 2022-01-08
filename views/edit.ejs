@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    <img src="<%= listing.img %>" alt="vehicle" />
+    <form action="/home/<%= listing._id %>?_method=PUT" method="POST">
+        Image: <input type="text" name="img" value="<%= listing.img %>" /><br />
+        Make: <input type="text" name="make" value="<%= listing.make %>" /><br />
+        Model: <input type="text" name="model" value="<%= listing.model %>" /><br />
+        Year: <input type="text" name="year" value="<%= listing.year %>" /><br />
+        Mileage: <input type="text" name="mileage" value="<%= listing.mileage %>" /><br />
+        Description: <input type="text" name="description" value="<%= listing.description %>" /><br />
+        Price: <input type="text" name="price" value="<%= listing.price %>" /><br />
+        Watching: <input type="text" name="watching" value="<%= listing.watching %>" /><br />
+        <input type="submit" value="POST CHANGES">
+    </form>
+</body>
+</html>
