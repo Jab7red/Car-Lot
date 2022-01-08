@@ -40,7 +40,9 @@ indexRouter.get('/home', (req, res) => {
     });
 });
 // NEW
-
+indexRouter.get('/home/new', (req, res) => {
+    res.render('new.ejs');
+});
 // DELETE
 
 // UPDATE
@@ -57,7 +59,11 @@ indexRouter.put('/home/:id', (req, res) => {
     )
 });
 // CREATE
-
+indexRouter.post('/home', (req, res) => {
+    Listing.create(req.body, (err, createdListing) => {
+        res.redirect('/home')
+    });
+});
 // EDIT
 indexRouter.get('/home/:id/edit', (req, res) => {
     Listing.findById(req.params.id, (err, foundListing) => {
