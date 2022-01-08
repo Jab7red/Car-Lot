@@ -17,3 +17,10 @@
 <h1>Getting Started</h1>
 <h4>Note: You will need to sign up or login to view app contents</h4>
 <a href="https://jbs-car-lot.herokuapp.com">Click Here</a>
+
+<h1>Next Steps/Future Enhancements</h1>
+<ul>
+    <li>Add the ability for a user to search for a vehicle via search bar</li>
+    <li>Add the ability for a user to be able to keep trach of vehicles they have on watch</li>
+    <li>Add the ability for the user to recieve TEXT conformation of app sign up</li>
+</ul>
