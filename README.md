@@ -22,5 +22,5 @@
 <ul>
     <li>Add the ability for a user to search for a vehicle via search bar</li>
     <li>Add the ability for a user to be able to keep trach of vehicles they have on watch</li>
-    <li>Add the ability for the user to recieve TEXT conformation of app sign up</li>
+    <li>Add the ability for the user to recieve TEXT comformation of app sign up</li>
 </ul>
