@@ -13,3 +13,7 @@
     <li>Mongoose</li>
     <li>MongoDB</li>
 </ul>
+
+<h1>Getting Started</h1>
+<h4>Note: You will need to sign up or login to view app contents</h4>
+<a href="https://jbs-car-lot.herokuapp.com">Click Here</a>
