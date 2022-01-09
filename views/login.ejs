@@ -8,16 +8,20 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>Log In Page</h1>
+    <h1>JB's Car Lot</h1>
     <% if(error) { %>
         <p style="color: red;"><%= error %></p>
     <% } %>
+    <header>
+        <nav>
+            <a href="/signup">Sign Up</a><br />
+            <a href="/">Welcome Page</a>
+        </nav>
+    </header>
     <form action="/login" method="POST">
         <input type="email" name="email" placeholder="EMAIL" /><br />
         <input type="password" name="password" placeholder="PASSWORD" /><br />
         <input type="submit" value="LOGIN">
     </form>
-    <a href="/signup">Sign Up</a><br />
-    <a href="/">Welcome Page</a>
 </body>
 </html>

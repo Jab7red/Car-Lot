@@ -8,7 +8,7 @@ const indexRouter = express.Router();
 // =======================================
 const Listing = require('../models/listing');
 // =======================================
-//                ROUTES
+//            FUNCTION ROUTES
 // =======================================
 // SEED
 
@@ -31,6 +31,16 @@ indexRouter.put('/home/:id/watch', (req, res) => {
         res.redirect(`/home/${req.params.id}`)
     });
 });
+// BID
+indexRouter.put('/home/:id/bid', (req, res) => {
+    Listing.updateOne({_id:req.params.id}, {$inc:{'price': 500}},
+    (err, listing) => {
+        res.redirect(`/home/${req.params.id}`);
+    });
+});
+// =======================================
+//            INDUCES ROUTES
+// =======================================
 // INDEX
 indexRouter.get('/home', (req, res) => {
     Listing.find({}, (err, allListings) => {
