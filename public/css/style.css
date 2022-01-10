@@ -1,12 +1,15 @@
 body {
-    text-align: center;
-    background-color: gray;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 img {
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
     border: 2px solid black;
 }
 
@@ -38,4 +41,36 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #04AA6D;
+}
+
+.homeP {
+    font-size: 20px;
+}
+
+p {
+    font-weight: 700;
+}
+
+.container1 {
+    font-family: 'Syncopate';
+    color: #AAAAAA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container1 h1 {
+    font-size: 75px;
+}
+
+.container1 h3 {
+    font-size: 30px;
+}
+
+.welcomeImg {
+    width: 500px;
+    height: 300px;
 }

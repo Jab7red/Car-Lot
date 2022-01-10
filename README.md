@@ -24,3 +24,7 @@
     <li>Add the ability for a user to be able to keep trach of vehicles they have on watch</li>
     <li>Add the ability for the user to recieve TEXT confirmation of app sign up</li>
 </ul>
+
+<h1>Referrences</h1>
+<h3>I do not own the rights to the images below, there purpose is purely educational</h3>
+<p>Welcome Page Image: https://www.vecteezy.com/vector-art/655315-red-sport-car-silhouette-with-reflection-on-black-background</p>
