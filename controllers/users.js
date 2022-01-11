@@ -15,10 +15,10 @@ userRouter.get('/login', (req, res) => {
 
 userRouter.post('/login', (req, res) => {
     User.findOne({email: req.body.email}, (err, user) => {
-        if(!user) return res.render('login.ejs', {error: 'Invalid Credentials'});
+        if(!user) return res.render('login.ejs', {error: 'Invalid Username/Password'});
 
         const isMatched = bcrypt.compareSync(req.body.password, user.password)
-        if(!isMatched) return res.render('login.ejs', {error: 'Invalid Credentials'});
+        if(!isMatched) return res.render('login.ejs', {error: 'Invalid Username/Password'});
 
         req.session.user = user._id;
         res.redirect('/home');

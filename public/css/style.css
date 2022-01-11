@@ -8,6 +8,9 @@ h1 {
     color: #ccc;
     font-size: 50px;
 }
+h3 {
+    color: #ccc;
+}
 
 h3 a {
     color: #851111;
@@ -126,4 +129,8 @@ label {
 .postingImg {
     height: 300px;
     width: 500px;
+}
+
+.error {
+    font-size: 20px;
 }

@@ -12,9 +12,7 @@
 <body>
     <div class="container2">
         <h1>JB's Car Lot</h1>
-        <% if(error) { %>
-        <p style="color: red;"><%= error %></p>
-        <% } %>
+        
         <header>
             <nav>
                 <a href="/">Welcome</a>
@@ -24,6 +22,9 @@
         <img class="welcomeImg"
             src="https://static.vecteezy.com/system/resources/thumbnails/000/655/315/small/Car_F_02-1.jpg"
             alt="Car Photo">
+            <% if(error) { %>
+                <p class="error" style="color: red;">*<%= error %>*</p>
+                <% } %>
         <div class="containerLogin">
             <form action="/login" method="POST">
                 <fieldset>
