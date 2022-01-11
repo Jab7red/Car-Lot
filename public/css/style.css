@@ -174,3 +174,16 @@ label {
 .showP {
     font-size: 25px;
 }
+
+.editContainer {
+    text-align: center;
+    color: #AAAAAA;
+    padding-top: 10px;
+}
+
+.editImg {
+    width: 500px;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
