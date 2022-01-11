@@ -7,6 +7,22 @@ h1 {
     font-size: 50px;
 }
 
+h3 a {
+    color: #851111;
+}
+
+nav {
+    width: 20%;
+    margin: auto;
+}
+
+nav a {
+    font-size: 20px;
+    padding: 5px;
+    color: #851111;
+    text-decoration: none;
+}
+
 img {
     height: 400px;
     width: 700px;
@@ -73,4 +89,32 @@ p {
 .welcomeImg {
     width: 500px;
     height: 300px;
+}
+
+.container2 {
+    font-family: 'Syncopate';
+    color: #AAAAAA;
+    text-align: center;
+}
+
+.container2 input {
+    padding: 10px
+}
+
+.containerLogin {
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+fieldset {
+    border: 2px solid #851111;
+    border-radius: 5px;
+    width: 20%;
+    margin: auto;
+}
+
+label {
+    display: block;
 }
