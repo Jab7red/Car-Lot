@@ -127,6 +127,7 @@ label {
 }
 
 .postingImg {
+    border: 2px solid #851111;
     height: 300px;
     width: 500px;
 }
@@ -144,6 +145,7 @@ label {
 }
 
 .showImg {
+    border: 2px solid #851111;
     width: 500px;
     height: 300px;
 }
