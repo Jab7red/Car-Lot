@@ -1,6 +1,6 @@
 module.exports = [
     {
-        img: 'https://s.aolcdn.com/commerce/autodata/images/USB40FOS102I0101.jpg',
+        img: 'https://dealerscloud.blob.core.windows.net/overdrivemotors/1FMZU75W14ZA27206/800/1.jpg',
         make: 'Ford',
         model: 'Explorer',
         year: '2004',

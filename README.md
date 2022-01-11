@@ -28,3 +28,7 @@
 <h1>Referrences</h1>
 <h3>I do not own the rights to the images below, there purpose is purely educational</h3>
 <p>Welcome Page Image: https://www.vecteezy.com/vector-art/655315-red-sport-car-silhouette-with-reflection-on-black-background</p>
+<p>Ford Explorer: https://dealerscloud.blob.core.windows.net/overdrivemotors/1FMZU75W14ZA27206/800/1.jpg</p>
+<p>RAM 2500: https://media.ed.edmunds-media.com/dodge/ram-pickup-2500/2010/oem/2010_dodge_ram-pickup-2500_crew-cab-pickup_laramie_fq_oem_2_1600.jpg</p>
+<p>Toyota Camry: http://picolio.auto123.com/auto123-media/articles/2020/12/67664/DSCF8081%20-%20Copyen.JPG</p>
+<p>Stock Photo: https://content.homenetiol.com/640x480/3b1058893f8c4ee4b44dd6f4369b58ac.jpg</p>

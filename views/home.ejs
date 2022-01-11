@@ -17,14 +17,14 @@
         <li style="float: right;"><a href="/logout">Log Out</a></li>
     </ul>
 
-    <div>
+    <div class="homeContainer">
         <% listings.forEach(listing => { %>
         <p class="homeP">
             <strong>
                 <%=listing.year%> <%=listing.make%> - <%=listing.model%>
             </strong>
         </p>
-        <a href="/home/<%=listing._id %>"><img src="<%= listing.img %>" alt="vehicle"></a>
+        <a href="/home/<%=listing._id %>"><img class="postingImg" src="<%= listing.img %>" alt="vehicle"></a>
         <% }); %>
     </div>
 </body>
