@@ -11,6 +11,7 @@
 
 <body>
     <h1><%= listing.year %> <%= listing.make %> - <%= listing.model %></h1>
+    <p class="time">The Current Time is: <span id='clock'></span></p>
     <ul>
         <li><a href="/home">Home</a></li>
         <li><a href="/home/new">Add Listing</a></li>
@@ -43,6 +44,13 @@
         <% } %>
 
     </div>
+    <script>
+        function showTime() {
+            const d = new Date();
+            document.getElementById('clock').innerHTML = d.toLocaleTimeString();
+        }
+        setInterval(showTime, 1000);
+    </script>
 </body>
 
 </html>
