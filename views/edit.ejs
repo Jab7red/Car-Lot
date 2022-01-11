@@ -21,6 +21,7 @@
         <img class="editImg" src="<%= listing.img %>" alt="vehicle" />
         <form action="/home/<%= listing._id %>?_method=PUT" method="POST">
             <fieldset>
+                <legend>Edit Vehicle Info</legend>
                 <label for="img">Image</label>
                 <input type="text" name="img" value="<%= listing.img %>" /><br />
                 <label for="make">Make</label>
