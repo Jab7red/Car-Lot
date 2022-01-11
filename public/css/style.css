@@ -134,3 +134,43 @@ label {
 .error {
     font-size: 20px;
 }
+
+.watching {
+    font-size: 30px;
+}
+
+.showContainer {
+    text-align: center;
+}
+
+.showImg {
+    width: 500px;
+    height: 300px;
+}
+
+.watchForm {
+    padding-bottom: 10px;
+}
+
+.watchInput {
+    font-size: 20px;
+    background-color: #2b5fba;
+}
+
+.removeForm {
+    padding-top: 20px;
+}
+
+.removeInput {
+    font-size: 20px;
+    background-color: #851111; 
+}
+
+.bidInput {
+    font-size: 20px;
+    background-color: #26bd3c;
+}
+
+.showP {
+    font-size: 25px;
+}
