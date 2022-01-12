@@ -37,6 +37,7 @@
                 $<%= listing.price %>
                 <% } %>
             </p>
+            <p>Sell By: <%= listing.sellBy %></p>
         </div>
         <% if(listing.price === 0) {} else { %>
         <form class="bidForm" action="/home/<%= listing._id %>/bid?_method=PUT" method="POST">

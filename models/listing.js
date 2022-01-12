@@ -10,6 +10,7 @@ const listingSchema = new Schema({
     description: {type: String},
     price: {type: Number},
     watching: {type: Number, default: 0},
+    sellBy: {type: String},
 });
 
 const Listing = mongoose.model('Listing', listingSchema);
