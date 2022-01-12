@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <%- include('./partials/Date-Time.ejs') %>
     <title>New</title>
 </head>
 
 <body>
     <h1>Add Listing Here</h1>
+    <p class="time"><span id='clock'></span></p>
     <ul>
         <li><a href="/home">Home</a></li>
         <li><a class="active" href="/home/new">Add Listing</a></li>

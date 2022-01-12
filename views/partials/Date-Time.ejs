@@ -1,0 +1,7 @@
+<script>
+    function showDateNTime() {
+        const d = new Date();
+        document.getElementById('clock').innerHTML = d.toLocaleString();
+    }
+    setInterval(showDateNTime, 1000);
+</script>

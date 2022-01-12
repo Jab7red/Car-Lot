@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <%- include('./partials/Date-Time.ejs') %>
     <title>JB's Car Lot</title>
 </head>
 
 <body>
     <h1><%= listing.year %> <%= listing.make %> - <%= listing.model %></h1>
-    <p class="time">The Current Time is: <span id='clock'></span></p>
+    <p class="time"><span id='clock'></span></p>
     <ul>
         <li><a href="/home">Home</a></li>
         <li><a href="/home/new">Add Listing</a></li>
@@ -30,27 +31,19 @@
         <div class="showP">
             <p>Description: <%= listing.description %></p>
             <p>Mileage: <%= listing.mileage %></p>
-            <p>Price:
+            <p>Current Price:
                 <% if(listing.price === 0) { %> Contact Seller
                 <% } else { %>
                 $<%= listing.price %>
                 <% } %>
             </p>
         </div>
-        <% if(listing.price ===0) {} else { %>
+        <% if(listing.price === 0) {} else { %>
         <form class="bidForm" action="/home/<%= listing._id %>/bid?_method=PUT" method="POST">
             <input class="bidInput" type="submit" value="BID">
         </form>
         <% } %>
-
     </div>
-    <script>
-        function showTime() {
-            const d = new Date();
-            document.getElementById('clock').innerHTML = d.toLocaleTimeString();
-        }
-        setInterval(showTime, 1000);
-    </script>
 </body>
 
 </html>

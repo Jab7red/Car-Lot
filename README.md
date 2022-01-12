@@ -1,5 +1,5 @@
 <h1>JB's Car Lot</h1>
-<h3>This app's intended purpose is to allow its users to see postings of vehicles for sale as well as the ability to post their own vehicles for sale as well.</h3>
+<h3>This app's intended purpose is to allow its users to see postings of vehicles for sale by bid only as well as the ability to post their own vehicles for sale by bid as well.</h3>
 
 <h1>Screenshots</h1>
 
@@ -21,7 +21,7 @@
 <h1>Next Steps/Future Enhancements</h1>
 <ul>
     <li>Add the ability for a user to search for a vehicle via search bar</li>
-    <li>Add the ability for a user to be able to keep trach of vehicles they have on watch</li>
+    <li>Add the ability for a user to be able to keep track of vehicles they have on watch</li>
     <li>Add the ability for the user to recieve TEXT confirmation of app sign up</li>
 </ul>
 
