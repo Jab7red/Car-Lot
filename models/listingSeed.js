@@ -1,30 +1,30 @@
 module.exports = [
     {
-        img: 'https://dealerscloud.blob.core.windows.net/overdrivemotors/1FMZU75W14ZA27206/800/1.jpg',
-        make: 'Ford',
-        model: 'Explorer',
-        year: '2004',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/2019_Rolls-Royce_Phantom_V12_Automatic_6.75.jpg',
+        make: 'Rolls-Royce',
+        model: 'Phantom',
+        year: '2017',
         mileage: 35679,
-        description: '2004 Ford Explorer, still runs and only needs some TLC.',
-        price: 5000,
+        description: '2017 Rolls-Royce Phantom, one owner, garage kept.',
+        price: 90000,
         sellBy: '2022-02-14'
     }, {
-        img: 'https://media.ed.edmunds-media.com/dodge/ram-pickup-2500/2010/oem/2010_dodge_ram-pickup-2500_crew-cab-pickup_laramie_fq_oem_2_1600.jpg',
-        make: 'Dodge',
-        model: 'RAM 2500',
-        year: '2010',
-        mileage: 87564,
-        description: '2010 RAM 2500, engine needs a new knock sensor but otherwise works fine.',
-        price: 15000,
+        img: 'https://www.automotiveaddicts.com/wp-content/uploads/2021/02/2021-chevrolet-corvette-stingray-convertible.jpg',
+        make: 'Chevrolet',
+        model: 'Corvette C8 Stingray',
+        year: '2020',
+        mileage: 564,
+        description: '2020 Chevrolet Corvette C8 Stingray, two owner.',
+        price: 150000,
         sellBy: '2022-05-10'
     }, {
-        img: 'http://picolio.auto123.com/auto123-media/articles/2020/12/67664/DSCF8081%20-%20Copyen.JPG',
-        make: 'Toyota',
-        model: 'Camry',
-        year: '2020',
+        img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bentley-continental-gt-speed-2-1632854763.jpeg',
+        make: 'Bentley',
+        model: 'Continental GT',
+        year: '2022',
         mileage: 1456,
-        description: '2020 Toyota Camry, all it needs is tires and it is road worthy',
-        price: 18452,
+        description: '2022 Bentley Continental GT, showroom car, 1 owner',
+        price: 126500,
         sellBy: '2022-01-28'
     }
 ]

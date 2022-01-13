@@ -32,7 +32,7 @@ nav a {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     background-color: #333;
     position: sticky;
@@ -122,10 +122,6 @@ label {
     display: block;
 }
 
-.homeContainer {
-    text-align: center;
-}
-
 .postingImg {
     border: 2px solid #851111;
     height: 300px;
@@ -198,4 +194,50 @@ label {
 
 .time {
     text-align: center;
+}
+
+.homeImgCont {
+    text-align: center;
+}
+
+.homeImg {
+    width: 300px;
+    height: 200px;
+}
+
+table {
+    background-color: #333;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+th {
+    padding: 10px;
+    background-color: #333;
+    border: 2px solid black;
+    color: #ccc
+}
+
+.tdImg {
+    width: 250px;
+    height: 150px;
+}
+
+td {
+    text-align: center;
+    color: black;
+}
+
+td a {
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #595757;
+}
+
+tr:nth-child(odd) {
+    background-color: #787474;
 }
