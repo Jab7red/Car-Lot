@@ -269,3 +269,15 @@ tr:nth-child(odd) {
 h4 a {
     color: #851111;
 }
+
+.detailsBtn {
+    border-radius: 15px;
+    background-color: #e39014;
+    border: 1px solid #e39014;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.detailsBtn:hover {
+    cursor: pointer;
+}

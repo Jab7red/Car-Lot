@@ -4,7 +4,7 @@
 const express = require('express');
 const indexRouter = express.Router();
 const auth = require('../middleware/auth');
-const user = require('../models/user');
+const User = require('../models/user');
 // =======================================
 //             REQUIRE MODEL
 // =======================================
@@ -56,11 +56,12 @@ indexRouter.get('/home/new', auth.isAuthenticated, (req, res) => {
     res.render('new.ejs');
 });
 // DELETE
-indexRouter.delete('/home/:id', (req, res) => {
+indexRouter.delete('/home/:id', auth.isAuthenticated, (req, res) => {
     Listing.findByIdAndDelete(req.params.id, (err, deleteListing) => {
         res.redirect('/home');
     });
 });
+
 // UPDATE
 indexRouter.put('/home/:id', auth.isAuthenticated, (req, res) => {
     Listing.findByIdAndUpdate(
