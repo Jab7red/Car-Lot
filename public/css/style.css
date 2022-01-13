@@ -281,3 +281,15 @@ h4 a {
 .detailsBtn:hover {
     cursor: pointer;
 }
+
+footer {
+    background-color: #333;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+footer p {
+    text-align: center;
+}
+
+
