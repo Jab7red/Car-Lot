@@ -228,6 +228,7 @@ th {
 td {
     text-align: center;
     color: black;
+    font-size: 16px;
 }
 
 td a {
@@ -240,4 +241,27 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
     background-color: #787474;
+}
+
+.watchBtn {
+    background-color: #558be0;
+    border: 1px solid #558be0;
+    border-radius: 25px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-right: 140px;
+}
+
+.watchBtn:hover {
+    cursor: pointer;
+}
+
+.bidBtn {
+    background-color: #55c24e;
+    border: 1px solid #55c24e;
+    border-radius: 15px;
+}
+
+.bidBtn:hover {
+    cursor: pointer;
 }

@@ -29,7 +29,7 @@
             <th>Image</th>
             <th>Lot Info</th>
             <th>Vehicle Info</th>
-            <th>Condition</th>
+            <th>Description</th>
             <th>Sale Info</th>
             <th>Sell By</th>
             <th>Bids</th>
@@ -37,8 +37,13 @@
         <% listings.forEach(listing => { %>
         <tr>
             <td><a href="/home/<%= listing._id %>"><img class="tdImg" src="<%= listing.img %>" alt="Image"></a></td>
-            <td><a href="/home/<%= listing._id %>"><%= listing.year %> <%= listing.make %> <%= listing.model %></a></td>
-            <td>Odomoter: 
+            <div class="watchDiv">
+                <td><a href="/home/<%= listing._id %>"><%= listing.year %> <%= listing.make %> <%= listing.model %></a>
+                    <br>
+                    <a href="/home/<%= listing._id %>"><button class="watchBtn">Watch</button></a>
+                </td>
+            </div>
+            <td>Odomoter:
                 <br>
                 <%= listing.mileage %> Miles
             </td>
@@ -50,7 +55,10 @@
             </td>
             <td>Current Bid:
                 <br>
-                $<%= listing.price %></td>
+                $<%= listing.price %> USD
+                <br>
+                <a href="/home/<%= listing._id %>"><button class="bidBtn">BID NOW</button></a>
+            </td>
             <% }) %>
         </tr>
     </table>
