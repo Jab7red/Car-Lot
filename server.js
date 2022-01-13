@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const expressSession = require('express-session');
 const methodOverride = require('method-override');
 const app = express();
+const auth = require('./middleware/auth');
 const indexController = require('./controllers/index');
 const userController = require('./controllers/users');
 require('dotenv').config();
@@ -41,6 +42,7 @@ app.use(function(req, res, next) {
     console.log('Session Store: ', req.session);
     next();
 });
+app.use(auth.handleLoggedInUser);
 // =======================================
 //              CONTROLLERS
 // =======================================

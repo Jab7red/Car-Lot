@@ -11,7 +11,11 @@ const listingSchema = new Schema({
     price: {type: Number},
     watching: {type: Number, default: 0},
     sellBy: {type: String},
-});
+    createdBy: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    }
+}, { timestamps: true });
 
 const Listing = mongoose.model('Listing', listingSchema);
 

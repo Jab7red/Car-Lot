@@ -3,6 +3,8 @@
 // =======================================
 const express = require('express');
 const indexRouter = express.Router();
+const auth = require('../middleware/auth');
+const user = require('../models/user');
 // =======================================
 //             REQUIRE MODEL
 // =======================================
@@ -25,14 +27,14 @@ indexRouter.get('/', (req, res) => {
     res.render('welcome.ejs')
 });
 // WATCH
-indexRouter.put('/home/:id/watch', (req, res) => {
+indexRouter.put('/home/:id/watch', auth.isAuthenticated, (req, res) => {
     Listing.updateOne({_id:req.params.id}, {$inc:{'watching': 1}},
     (err, listing) => {
         res.redirect(`/home/${req.params.id}`)
     });
 });
 // BID
-indexRouter.put('/home/:id/bid', (req, res) => {
+indexRouter.put('/home/:id/bid', auth.isAuthenticated, (req, res) => {
     Listing.updateOne({_id:req.params.id}, {$inc:{'price': 500}},
     (err, listing) => {
         res.redirect(`/home/${req.params.id}`);
@@ -50,7 +52,7 @@ indexRouter.get('/home', (req, res) => {
     });
 });
 // NEW
-indexRouter.get('/home/new', (req, res) => {
+indexRouter.get('/home/new', auth.isAuthenticated, (req, res) => {
     res.render('new.ejs');
 });
 // DELETE
@@ -60,7 +62,7 @@ indexRouter.delete('/home/:id', (req, res) => {
     });
 });
 // UPDATE
-indexRouter.put('/home/:id', (req, res) => {
+indexRouter.put('/home/:id', auth.isAuthenticated, (req, res) => {
     Listing.findByIdAndUpdate(
         req.params.id,
         req.body,
@@ -79,7 +81,7 @@ indexRouter.post('/home', (req, res) => {
     });
 });
 // EDIT
-indexRouter.get('/home/:id/edit', (req, res) => {
+indexRouter.get('/home/:id/edit', auth.isAuthenticated, (req, res) => {
     Listing.findById(req.params.id, (err, foundListing) => {
         res.render('edit.ejs', {
             listing: foundListing,
