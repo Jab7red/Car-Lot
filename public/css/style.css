@@ -265,3 +265,7 @@ tr:nth-child(odd) {
 .bidBtn:hover {
     cursor: pointer;
 }
+
+h4 a {
+    color: #851111;
+}
