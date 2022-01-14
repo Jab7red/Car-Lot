@@ -151,8 +151,14 @@ label {
 }
 
 .watchInput {
+    border-radius: 15px;
     font-size: 20px;
     background-color: #2b5fba;
+    border: 1px solid #2b5fba;
+}
+
+.watchInput:hover {
+    cursor: pointer;
 }
 
 .removeForm {
@@ -160,13 +166,27 @@ label {
 }
 
 .removeInput {
+    border-radius: 15px;
     font-size: 20px;
-    background-color: #851111; 
+    background-color: #851111;
+    border: 1px solid #851111; 
+}
+
+.removeInput:hover {
+    cursor: pointer;
 }
 
 .bidInput {
+    border-radius: 15px;
     font-size: 20px;
     background-color: #26bd3c;
+    border: 1px solid #26bd3c;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bidInput:hover {
+    cursor: pointer;
 }
 
 .showP {
@@ -246,10 +266,11 @@ tr:nth-child(odd) {
 .watchBtn {
     background-color: #558be0;
     border: 1px solid #558be0;
-    border-radius: 25px;
-    padding: 5px;
+    border-radius: 15px;
     margin-top: 30px;
     margin-right: 140px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .watchBtn:hover {
