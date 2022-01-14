@@ -2,12 +2,15 @@
 <h3>This app's intended purpose is to allow its users to see postings of vehicles for sale by bid only as well as the ability to post their own vehicles for sale by bid as well.</h3>
 
 <h1>Screenshots</h1>
-
+<img src="https://i.imgur.com/dzSApTc.png">
+<img src="https://i.imgur.com/4VamnD8.png">
+<img src="https://i.imgur.com/JHg1yx7.png">
 <h1>Technologies Used</h1>
 <ul>
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
+    <li>Express</li>
     <li>Node.js</li>
     <li>jQuery</li>
     <li>Mongoose</li>
